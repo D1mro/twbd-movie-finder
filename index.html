@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TWBD — Movie Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">🎬 TWBD</h1>
+    <form id="search-form" class="search-form">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Найти фильм..."
+        autocomplete="off"
+      />
+      <button type="submit">Найти</button>
+    </form>
+  </header>
+
+  <main class="main">
+    <p id="status" class="status" hidden></p>
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <footer class="footer">
+    <p>Данные предоставлены <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
